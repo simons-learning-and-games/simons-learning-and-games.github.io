@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from tzamos.com/wale2019/?fbclid=IwAR2TfYUyxsIsgdZoGS4XK9MrFf3YBDuUVjhxpvbDOlv2o0hXWiG7kfN9ioQ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 May 2019 05:14:06 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Learning in Games - Reading Group</title>
+
+  <meta name="description" content="A page for the reading group's meetings" />
+  <meta name="author" content="Fivos Kalogiannis">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+  <link rel="stylesheet" href="./css/prism.css" />
+  <link href="././fonts.googleapis.com/css92b2.css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/katex.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/latex.css">
+  <link rel="stylesheet" href="./css/latex-highlighting.css">
+
+  <script type="text/javascript" src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/main.js" charset="utf-8"></script>
+
+  <!-- <link rel="icon" type="image/png" href="./img/favicon.ico" /> -->
+  <link rel="shortcut icon" href="https://simons.berkeley.edu/sites/all/themes/simons/favicon.ico" type="image/vnd.microsoft.icon">
+  <style>
+  /** {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.col-md-4 {
+  padding: 50px;
+}*/
+.circle-image-box-with-caption {
+  position: relative;
+  display: inline-block;
+  margin: 32px;
+    text-align: center;
+    padding: 100;
+}
+.circle-image-box-with-caption img {
+  margin: 10px auto 20px;
+  width: 155px;
+  height: 160px;
+  border-radius: 50%;
+  /*border: 2px solid #f98835;*/
+  display: block;
+  padding: 100;
+}
+
+.circle-image-box-with-caption figcaption {
+  width: 100%;
+  position: absolute;
+  padding: 0 20px;
+  bottom: -30px;
+  /*border: 1px solid #f98835;*/
+  width: 100%;
+  text-align: center;
+  /*background: #f98835;*/
+}
+ /*.figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}*/
+ .iHolder {
+  /*display: inline-table;*/
+  /*width: 1%;*/
+  /*background-color: #f8f8f8;*/
+  /*padding: .5em;*/
+  /*border: 1px solid #ccc;*/
+  /*margin: 0 .5em;*/
+  /*overflow: hidden;*/
+  border-radius: 50%;
+    /*border-radius: 75px;*/
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    /*box-shadow: 10px 10px 10px -10px #000;*/
+    /*width: 25%;
+    float: left;*/
+    margin: 4px;
+    text-align: center;
+    padding: 0;
+}
+.iHolder img {
+  border: 1px solid #ccc;
+}
+.iHolder figcaption {
+  text-align: center;
+  padding: 0.7em;
+}
+.key_image {
+    overflow: hidden;
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    box-shadow: 10px 10px 10px -10px #000;
+}
+.timeline > li {
+    padding-bottom: 60px !important;
+}
+#content .timeline a {
+  font-weight: bold;
+  font-family: 'Source Sans Pro';
+}
+.pname {
+  display: block;
+}
+.paffil {
+  opacity: 0.5;
+  color: brown;
+}
+.particip {
+  font-size: 0.85em;
+  column-count: 2;
+  text-align: left;
+}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  grid-auto-flow: row dense;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+embed {
+width: 100%;   
+height: 100vh; 
+overflow-y:hidden ;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div id="header">
+    <div id="header-bar">
+      <div id="header-bar-wrap">
+        <span>Learning in Games</span>
+        <!--<a href="#contact"><div class="main-contact">Organization</div></a>-->
+      </div>
+    </div>
+    Simons Institute 2022 <br>
+    Reading Group
+  </div>
+  <div id="content">
+    <div>
+        <div class="image"><img src="./img/games.jpg" style="width: 70%;"></div>
+        <h2>Sum­mary</h2>
+        <p>
+          TBD
+        </p>
+       
+<h2>Details</h2>
+	<ul>
+    <p>Dates: Every Tuesday, February 8 - May 31, 2022.</p>
+    <p>Location:Spiti sas <br> 
+  </ul>
+
+
+<h2>Confirmed Speakers</h2>
+<!-- <div class="col-sm-6"> -->
+<div class="grid-container" style="grid-auto-flow: dense;">
+
+  <figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/sanjeev.jpg" />
+    <figcaption>
+      <h5><a href="https://www.cs.princeton.edu/~arora/"> Sanjeev<br>Arora</a></h5>
+    </figcaption>
+    
+  </figure>
+  <figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/collins.png" />
+    <figcaption>
+      <h5><a href="http://www.cs.columbia.edu/~mcollins/">Michael<br>Collins</a></h5>
+    </figcaption>
+  </figure>
+
+  <figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/jordan.png" />
+    <figcaption>
+      <h5><a href="https://people.eecs.berkeley.edu/~jordan/">Michael I. Jordan</a></h5>
+    </figcaption>
+  </figure>
+
+  <figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/karlin.jpg"/>
+    <figcaption>
+      <h5><a href="https://www.cs.washington.edu/people/faculty/karlin">Anna<br>Karlin</a></h5>
+    </figcaption>
+    </figure>
+
+<figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/karp.jpg"/>
+    <figcaption>
+      <h5><a href="https://en.wikipedia.org/wiki/Richard_M._Karp">Richard<br>Karp</a></h5>
+    </figcaption>
+  </figure>
+
+  <figure class="circle-image-box-with-caption">
+    <img class="wow rotateIn" src="./img/karp.jpg"/>
+    <figcaption>
+      <h5><a href="https://en.wikipedia.org/wiki/Richard_M._Karp">Richard<br>Karp</a></h5>
+    </figcaption>
+  </figure>
+
+</div>
+
+
+
+
+<!-- <h2 id="photos"> Click to watch all talks of Papafest *<a href="https://www.youtube.com/watch?v=OX2I00QVPDI&list=PLPldBy2vuDR9gp98jsowJQFn6jtpZatU0">Here</a>*</h2> -->
+
+<!-- <h2 id="photos">Photos</h2> -->
+<!-- Slideshow start -->
+
+<!-- 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="./img/image_1.jpg" style="width:100%">
+</div> 
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="./img/image_2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="./img/image_3.jpg" style="width:100%">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="./img/image_4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="./img/image_5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="./img/image_6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="./img/image_7.jpg" style="width:100%">
+</div> 
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script> -->
+<!-- Slideshow End -->
+
+<h2>Schedule</h2>
+<!-- It's loaded from the file schedule.html-->
+<embed type="text/html" style="overflow: hidden" src="reading-group-schedule.html" title="Schedule">
+
+<h2 id="contact">Organization</h2>
+
+  <!-- <div class="col-sm-6"> -->
+  <div class="grid-container" style=" grid-auto-flow: row;
+  grid-template-columns: auto auto auto auto " >
+  
+      <figure class="circle-image-box-with-caption">
+        <img class="wow rotateIn" src="./img/costis.jpg" style="width:100px; height:100px" />
+        <figcaption>
+          <h5><a href="http://people.csail.mit.edu/costis/">Costis Daskalakis</a></h5>
+  
+        </figcaption>
+      </figure>
+      <figure class="circle-image-box-with-caption">
+        <img class="wow rotateIn" src="./img/tim.png" style="width:100px; height:100px"/>
+        <figcaption>
+          <h5><a href="http://timroughgarden.org/">Tim Roughgarden</a></h5>
+  
+        </figcaption>
+  
+      </figure>
+      <figure class="circle-image-box-with-caption">
+        <img class="wow rotateIn" src="./img/mihalis.jpeg" style="width:100px; height:100px" />
+        <figcaption>
+          <h5><a href="http://www.cs.columbia.edu/~mihalis/">Mihalis Yannakakis</a></h5>
+  
+        </figcaption>
+  
+      </figure>
+      <figure class="circle-image-box-with-caption">
+        <img class="wow rotateIn" src="./img/mihalis.jpeg" style="width:100px; height:100px"/>
+        <figcaption>
+          <h5><a href="http://www.cs.columbia.edu/~mihalis/">Mihalis Yannakakis</a></h5>
+  
+        </figcaption>
+  
+      </figure>
+   </div>
+
+<h2 id="contact">Mailing List</h2>
+<p>In order to subscribe the reading group's maling list, contact: <a href="mailto:emvlatakis@cs.columbia.edu">emvlatakis@cs.columbia.edu</a>.<br></p>
+
+<h2>Website</h2>
+        
+  <div class="grid-container">
+    <figure class="circle-image-box-with-caption">
+      <img class="wow rotateIn" src="./img/fivos.jpg"  style="width:100px; height:100px">
+      <figcaption>
+        <h5><a href="https://fivoskal.github.io/">Fivos Kalogiannis</a></h5>
+      </figcaption>
+    </figure>
+  </div>
+</body>
+
+<!-- Mirrored from tzamos.com/wale2019/?fbclid=IwAR2TfYUyxsIsgdZoGS4XK9MrFf3YBDuUVjhxpvbDOlv2o0hXWiG7kfN9ioQ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 May 2019 05:14:26 GMT -->
+</html>
+
