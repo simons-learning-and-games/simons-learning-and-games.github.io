@@ -1,5 +1,6 @@
 <head>
 	<!-- add mathjax for tex support -->
+<base target="_top">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script>
   MathJax = {
@@ -41,6 +42,7 @@
 		/* color: navy; */
 		content: "Short Bio ";
 	}
+
 </style>
 </head>
 <ul class="timeline list">
@@ -49,9 +51,8 @@
 			<ul style="list-style-type:disc;">
 
 			<li>
-        <p>Talk: <a href="https://people.eecs.berkeley.edu/~jordan/">
-
-				Jacob Abernethy</a> (Georgia Tech) - Building Optimization Algorithms by Playing Games
+        <p>Talk: <a href="https://people.eecs.berkeley.edu/~jordan/" > Abernethy</a>
+          (Georgia Tech) - Building Optimization Algorithms by Playing Games
 				<!-- <div class="box"></div> -->
 				<div class="abstract">
           A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
