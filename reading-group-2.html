@@ -188,12 +188,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -203,9 +203,15 @@ img {vertical-align: middle;}
 }
 
 embed {
-width: 100%;   
-height: 100vh; 
+width: 100%;
+height: 100vh;
 overflow-y:hidden ;
+}
+iframe {
+width: 100%;
+height: 100vh;
+overflow-y:hidden ;
+border: none;
 }
 </style>
 
@@ -230,11 +236,11 @@ overflow-y:hidden ;
         <p>
           TBD
         </p>
-       
+
 <h2>Details</h2>
 	<ul>
     <p>Dates: Every Tuesday, February 8 - May 31, 2022.</p>
-    <p>Location:Spiti sas <br> 
+    <p>Location:Spiti sas <br>
   </ul>
 
 
@@ -247,7 +253,7 @@ overflow-y:hidden ;
     <figcaption>
       <h5><a href="https://www.cs.princeton.edu/~arora/"> Sanjeev<br>Arora</a></h5>
     </figcaption>
-    
+
   </figure>
   <figure class="circle-image-box-with-caption">
     <img class="wow rotateIn" src="./img/collins.png" />
@@ -294,13 +300,13 @@ overflow-y:hidden ;
 <!-- <h2 id="photos">Photos</h2> -->
 <!-- Slideshow start -->
 
-<!-- 
+<!--
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 7</div>
   <img src="./img/image_1.jpg" style="width:100%">
-</div> 
+</div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 7</div>
@@ -331,20 +337,20 @@ overflow-y:hidden ;
 <div class="mySlides fade">
   <div class="numbertext">7 / 7</div>
   <img src="./img/image_7.jpg" style="width:100%">
-</div> 
+</div>
 </div>
 
 
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <script>
@@ -356,14 +362,14 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
@@ -372,44 +378,45 @@ function showSlides() {
 
 <h2>Schedule</h2>
 <!-- It's loaded from the file schedule.html-->
-<embed type="text/html" style="overflow: hidden" src="reading-group-schedule.html" title="Schedule">
+<!-- <embed type="text/html" style="overflow: hidden" src="reading-group-schedule.html" title="Schedule"> -->
+<iframe src="reading-group-2-schedule.html" title="Schedule" >
 
 <h2 id="contact">Organization</h2>
 
   <!-- <div class="col-sm-6"> -->
   <div class="grid-container" style=" grid-auto-flow: row;
   grid-template-columns: auto auto auto auto " >
-  
+
       <figure class="circle-image-box-with-caption">
         <img class="wow rotateIn" src="./img/costis.jpg" style="width:100px; height:100px" />
         <figcaption>
           <h5><a href="http://people.csail.mit.edu/costis/">Costis Daskalakis</a></h5>
-  
+
         </figcaption>
       </figure>
       <figure class="circle-image-box-with-caption">
         <img class="wow rotateIn" src="./img/tim.png" style="width:100px; height:100px"/>
         <figcaption>
           <h5><a href="http://timroughgarden.org/">Tim Roughgarden</a></h5>
-  
+
         </figcaption>
-  
+
       </figure>
       <figure class="circle-image-box-with-caption">
         <img class="wow rotateIn" src="./img/mihalis.jpeg" style="width:100px; height:100px" />
         <figcaption>
           <h5><a href="http://www.cs.columbia.edu/~mihalis/">Mihalis Yannakakis</a></h5>
-  
+
         </figcaption>
-  
+
       </figure>
       <figure class="circle-image-box-with-caption">
         <img class="wow rotateIn" src="./img/mihalis.jpeg" style="width:100px; height:100px"/>
         <figcaption>
           <h5><a href="http://www.cs.columbia.edu/~mihalis/">Mihalis Yannakakis</a></h5>
-  
+
         </figcaption>
-  
+
       </figure>
    </div>
 
@@ -417,7 +424,7 @@ function showSlides() {
 <p>In order to subscribe the reading group's maling list, contact: <a href="mailto:emvlatakis@cs.columbia.edu">emvlatakis@cs.columbia.edu</a>.<br></p>
 
 <h2>Website</h2>
-        
+
   <div class="grid-container">
     <figure class="circle-image-box-with-caption">
       <img class="wow rotateIn" src="./img/fivos.jpg"  style="width:100px; height:100px">
@@ -430,4 +437,3 @@ function showSlides() {
 
 <!-- Mirrored from tzamos.com/wale2019/?fbclid=IwAR2TfYUyxsIsgdZoGS4XK9MrFf3YBDuUVjhxpvbDOlv2o0hXWiG7kfN9ioQ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 May 2019 05:14:26 GMT -->
 </html>
-
