@@ -28,21 +28,40 @@
 		/* color: navy; */
 		content: "Abstract ";
 	}
+  .bio{
+		width: 75%;
+		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+	.bio::before{
+		font-weight: bold;
+		/* color: navy; */
+		content: "Short Bio ";
+	}
 </style>
 </head>
 <ul class="timeline list">
 		<li><span class="itemlabel"><span class="hbox llap">Day 1</span></span>
-			<p><span class="bf"><span> Tuesday 08 February, 2022</p>
+			<p><span class="bf"><span> Thursday 03 February, 2022</p>
 			<ul style="list-style-type:disc;">
 
 			<li>
         <p>Talk: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics
+				Jacob Abernethy</a> (Georgia Tech) - Building Optimization Algorithms by Playing Games
 				<!-- <div class="box"></div> -->
 				<div class="abstract">
-					Motivated by recent advances in both theoretical and $a=b$ applied aspects of multiplayer games, spanning from e-sports to multi-agent generative adversarial networks, we focus on min-max optimization in team zero-sum games. In this class of games, players are split into two teams with payoffs equal within the same team and of opposite sign across the opponent team. Unlike the textbook two-player zero-sum games, finding a Nash equilibrium in our class can be shown to be CLS-hard, i.e., it is unlikely to have a polynomial-time algorithm for computing Nash equilibria. Moreover, in this generalized framework, we establish that even asymptotic last iterate or time average convergence to a Nash Equilibrium is not possible using Gradient Descent Ascent (GDA), its optimistic variant, and extra gradient. Specifically, we present a family of team games whose induced utility is \emph{non} multi-linear with \emph{non} attractive \emph{per-se} mixed Nash Equilibria, as strict saddle points of the underlying optimization landscape. Leveraging techniques from control theory, we complement these negative results by designing a modified GDA that converges locally to Nash equilibria. Finally, we discuss connections of our framework with AI architectures with team competition structures like multi-agent generative adversarial networks.
+          A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
 				</div>
+        <br></br>
+        <div class="bio">
+          Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+        </div>
+
+
 			  </p>
       </li><br>
 		</li>
