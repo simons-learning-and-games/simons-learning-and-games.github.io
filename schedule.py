@@ -8,11 +8,11 @@ import sys
 today = date.today()
 
 
-date_str = "08/02/22"
-# date_str = input("Starting date in %d/%m/%y format:")
+# date_str = "08/02/22"
+date_str = input("Starting date in %d/%m/%y format:")
 startdate = datetime.datetime.strptime(date_str, "%d/%m/%y")
-date_str = "31/05/22"
-# date_str = input("Finishing date in %d/%m/%y format:")
+# date_str = "31/05/22"
+date_str = input("Finishing date in %d/%m/%y format:")
 
 enddate = datetime.datetime.strptime(date_str, "%d/%m/%y")
 
