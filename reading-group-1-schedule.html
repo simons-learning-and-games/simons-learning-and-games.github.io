@@ -93,9 +93,9 @@
 			<ul style="list-style-type:disc;">
 
 
-			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
+			<li>Session 1: <a href="http://mlanctot.info/">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				Marc Lanctot</a> (DeepMind) -  Mastering the game of Go with deep neural networks and tree search </li><br>
 
 
 
@@ -104,10 +104,72 @@
 				<div class="content">
 
 					<p>
+            The game of Go has long been viewed as the most challenging of classic games for artificial intelligence owing
+             to its enormous search space and the difficulty of evaluating board positions and moves. In this talk I will cover AlphaGo,
+            an approach to computer Go that uses ‘value networks’ to evaluate board positions and ‘policy networks’ to select moves.
+            These deep neural networks are trained by a novel combination of supervised learning from human expert games,
+            and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go
+            at the level of state-of-the-art Monte Carlo tree search programs that simulate thousands of random games of self-play.
+            We also introduce a new search algorithm that combines Monte Carlo simulation with value and policy networks.
+            Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs,
+            and defeated the human European Go champion by 5 games to 0, and later to defeat a previous Go professional Lee Sedol.
+            This is the first time that a computer program has defeated a human professional player in the full-sized game of Go.
+            Toward the end of the talk, I will give a short survey of what has happened since this landmark event in AI,
+            and some open challenges for continued work in this area.
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
+            <br></br>
+            Paper connected with this talk:
+            <br></br>
+            [1] A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.
+             <br></br>
+          </p>
 
+				</div>
+
+
+
+				<button class="collapsible collapsible-bio"></button>
+
+				<div class="content">
+
+					<p>
+            Marc Lanctot is a research scientist at DeepMind. Previously, he was a post-doctoral researcher at the Maastricht University
+            Games and AI Group, working with Mark Winands. During his PhD, he worked at University of Alberta with Michael Bowling
+            on sampling algorithms for equilibrium computation and decision-making in games. Before his PhD, he did an undergrad
+            and Master's at McGill University's School of Computer Science and Games Research @ McGill, under the supervision of Clark Verbrugge.
+            He is interested in general multiagent learning (and planning), computational game theory, reinforcement learning, and game-tree search.
 					</p>
+
+				</div>
+
+			<li>Session 2: <a href="dtsipras.com">
+
+				Dimitris Tsipras</a> (Stanford) -   Thinking about the worst (in machine learning) </li><br>
+
+
+
+
+				<button class="collapsible collapsible-abstract"></button>
+
+				<div class="content">
+
+					<p>
+            While modern machine learning systems can succeed on challenging benchmarks, they are quite brittle:
+            their performance significantly degrades when exposed to even small variations of their training environments.
+            How can we build ML models that are more robust? In this talk, I will present a framework for reasoning about
+             the worst-case behavior of our machine learning systems. I will then describe how this framework can be used
+             in practice to train models that are invariant to a broad family of worst-case input perturbations.
+            Finally, I will discuss how such robust learning can be fundamentally different from standard learning,
+             presenting a unique set of challenges and opportunities
+
+             <br></br>
+             Papers connected with this talk:
+             <br></br>
+             [1]Towards Deep Learning Models Resistant to Adversarial Attacks
+             <br></br>
+             [2]Robustness May Be at Odds with Accuracy
+             <br></br>
+        	</p>
 
 				</div>
 
@@ -119,46 +181,16 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
-
+            Dimitris Tsipras is a postdoctoral researcher at Stanford, advised by Percy Liang and Greg Valiant.
+            He obtained his PhD from MIT, where he was advised by Aleksander Madry. His work focuses on understanding
+            and improving the reliability of modern machine learning methods.
 					</p>
 
 				</div>
-
-			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
-
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
-
-
-				<button class="collapsible collapsible-abstract"></button>
-
-				<div class="content">
-
-					<p>
-
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
-					</p>
-
-				</div>
-
-
-
-				<button class="collapsible collapsible-bio"></button>
-
-				<div class="content">
-
-					<p>
-
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
-
-					</p>
-
-				</div>
-
+<!--
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -168,8 +200,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -182,23 +213,23 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
 				</div>
 				</ul>
-
+-->
 		</li>
 
-			<li><span class="itemlabel"><span class="hbox llap">Day 2</span></span>
+			<!-- <li><span class="itemlabel"><span class="hbox llap">Day 2</span></span>
 			<p><span class="bf"><span> Tuesday 15 February, 2022</p> Sessions:
 			<ul style="list-style-type:disc;">
 
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -208,8 +239,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -222,7 +252,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -230,7 +260,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -239,8 +270,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -253,7 +283,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -261,7 +291,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -271,8 +301,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -285,7 +314,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -301,7 +330,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -311,8 +340,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -325,7 +353,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -333,7 +361,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -342,8 +371,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -356,7 +384,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -364,7 +392,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -374,8 +402,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -388,7 +415,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -404,7 +431,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -414,8 +441,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -428,7 +454,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -436,7 +462,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -445,8 +472,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -459,7 +485,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -467,7 +493,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -477,8 +503,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -491,7 +516,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -507,7 +532,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -517,8 +542,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -531,7 +555,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -539,7 +563,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -548,8 +573,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -562,7 +586,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -570,7 +594,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -580,8 +604,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -594,7 +617,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -610,7 +633,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -620,8 +643,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -634,7 +656,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -642,7 +664,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -651,8 +674,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -665,7 +687,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -673,7 +695,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -683,8 +705,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -697,7 +718,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -713,7 +734,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -723,8 +744,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -737,7 +757,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -745,7 +765,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -754,8 +775,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -768,7 +788,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -776,7 +796,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -786,8 +806,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -800,7 +819,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -816,7 +835,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -826,8 +845,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -840,7 +858,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -848,7 +866,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -857,8 +876,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -871,7 +889,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -879,7 +897,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -889,8 +907,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -903,7 +920,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -919,7 +936,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -929,8 +946,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -943,7 +959,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -951,7 +967,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -960,8 +977,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -974,7 +990,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -982,7 +998,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -992,8 +1008,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1006,7 +1021,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1022,7 +1037,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1032,8 +1047,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1046,7 +1060,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1054,7 +1068,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1063,8 +1078,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1077,7 +1091,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1085,7 +1099,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1095,8 +1109,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1109,7 +1122,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1125,7 +1138,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1135,8 +1148,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1149,7 +1161,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1157,7 +1169,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1166,8 +1179,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1180,7 +1192,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1188,7 +1200,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1198,8 +1210,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1212,7 +1223,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1228,7 +1239,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1238,8 +1249,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1252,7 +1262,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1260,7 +1270,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1269,8 +1280,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1283,7 +1293,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1291,7 +1301,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1301,8 +1311,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1315,7 +1324,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1331,7 +1340,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1341,8 +1350,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1355,7 +1363,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1363,7 +1371,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1372,8 +1381,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1386,7 +1394,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1394,7 +1402,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1404,8 +1412,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1418,7 +1425,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1434,7 +1441,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1444,8 +1451,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1458,7 +1464,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1466,7 +1472,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1475,8 +1482,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1489,7 +1495,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1497,7 +1503,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1507,8 +1513,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1521,7 +1526,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1537,7 +1542,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1547,8 +1552,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1561,7 +1565,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1569,7 +1573,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1578,8 +1583,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1592,7 +1596,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1600,7 +1604,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1610,8 +1614,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1624,7 +1627,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1640,7 +1643,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1650,8 +1653,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1664,7 +1666,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1672,7 +1674,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1681,8 +1684,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1695,7 +1697,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1703,7 +1705,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1713,8 +1715,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1727,7 +1728,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1743,7 +1744,7 @@
 
 			<li>Session 1: <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">
 
-				Scott Shenker</a> (UC Berkeley) - Why the Internet Architecture is almost perfect, but our core beliefs about it are entirely wrong</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1753,8 +1754,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1767,7 +1767,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1775,7 +1775,8 @@
 
 			<li>Session 2: <a href="https://people.eecs.berkeley.edu/~jordan/">
 
-				Michael I. Jordan</a> (UC Berkeley) - Dr. AI: or How I Learned to Stop Worrying and Love Economics</p></li><br>
+				TBA Speaker</a> (University) - Title</li><br>
+
 
 
 				<button class="collapsible collapsible-abstract"></button>
@@ -1784,8 +1785,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1798,7 +1798,7 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
@@ -1806,7 +1806,7 @@
 
 			<li>Session 3: <a href="https://www.cs.washington.edu/people/faculty/karlin">
 
-				Anna Karlin</a> (University of Washington) - An improved approximation for TSP in the half-integral case (and why Christos is my hero)</li><br>
+				TBA Speaker</a> (University) - Title</li><br>
 
 
 
@@ -1816,8 +1816,7 @@
 
 					<p>
 
-					A very popular trick for solving certain types of optimization problems is this: write your objective as the solution of a two-player zero-sum game, endow both players with an appropriate learning algorithm, watch how the opponents compete, and extract an (approximate) solution from the actions/decisions taken by the players throughout the process. This approach is very generic and provides a natural template to produce new and interesting algorithms. I will describe this framework and show how it applies in several scenarios, and describe recent work drawing connections to classical algorithms including Frank-Wolfe, Nesterov Accelerated Gradient Descent, and many others.
-
+					TBA Description
 					</p>
 
 				</div>
@@ -1830,14 +1829,14 @@
 
 					<p>
 
-					Jacob Abernethy is an Associate Professor in the College of Computing at Georgia Tech. In October 2011 he finished a PhD in the Division of Computer Science at the University of California at Berkeley, spent two years as a Simons postdoctoral fellow at UPenn, and held a faculty job at the University of Michigan for four years before joining Georgia Tech. Abernethy's primary interest is in Machine Learning, with a particular focus in sequential decision making, online learning, online algorithms and adversarial learning models
+TBA Short Bio
 
 					</p>
 
 				</div>
 				</ul>
 
-		</li>
+		</li> -->
 
 </ul>
 <script>
