@@ -1,0 +1,95 @@
+	/* .abstract{
+		width: 75%;
+		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		text-justify: inter-word;
+	} */
+
+	/* .abstract::before{ */
+		/* font-weight: bold; */
+		/* color: navy; */
+		/* content: "Abstract"; */
+	/* } */
+
+  /* .bio{
+		width: 75%;
+		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		text-justify: inter-word;
+	} */
+/* .bio::before{ */
+		/* font-weight: bold; */
+		/* color: navy; */
+		/* content: "Short Bio"; */
+	/* } */
+
+.collapsible{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  /* padding: 18px;
+  width: 75%; */
+  border: none;
+  width: 75%;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.collapsible-bio::before{
+  font-weight: bold;
+  content: "Short Bio";
+}
+
+.active, .collapsible-bio:hover {
+  /* background-color: #555; */
+}
+
+.collapsible-bio:after {
+  content: '\002B';
+  /* color: white; */
+  font-weight: bold;
+  float: right;
+  /* margin-left: 5px; */
+}
+/*  */
+.collapsible-abstract::before{
+  font-weight: bold;
+  content: "Abstract";
+}
+
+.active, .collapsible-abstract:hover {
+  /* background-color: #555; */
+}
+
+.collapsible-abstract:after {
+  content: '\002B';
+  /* color: white; */
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+/*  */
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  /* padding: 0 18px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* background-color: #f1f1f1; */
+  border: none;
+  width: 75%;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
