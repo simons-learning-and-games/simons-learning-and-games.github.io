@@ -149,6 +149,7 @@ def buildSpeakersAndSchedules(inp):
     with doc.head:
         link(rel='stylesheet', href='../css/extras.css')
         meta(charset="UTF-8")
+        base(target='_top')
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0")
         link(rel="stylesheet", href="../css/prism.css")
