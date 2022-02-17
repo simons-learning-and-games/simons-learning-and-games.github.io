@@ -39,7 +39,10 @@ def scheduledTalks(schedule):
                 with p():
                     with span(_class="bf"):
                         with span():
-                            pd.to_datetime(day['date'])
+                            text(\
+                                pd.to_datetime(day['date']).strftime('%A %d %B, %Y')\
+                                +' '+\
+                                day['time'].strftime('%H:%M'))
                             # text(.strftime('%A %d %B, %Y'))
                 with ul( style="list-style-type:disc;"):
                     with li():
