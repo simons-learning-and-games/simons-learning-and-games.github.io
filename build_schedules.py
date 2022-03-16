@@ -16,13 +16,15 @@ def confirmedSpeakers(speakers):
         for _, speaker in speakers.iterrows():
             try:
                 with figure(_class="circle-image-box-with-caption"):
-                    img(src=os.path.join( '..', 'img', speaker['imgfile']), _class="wow rotateIn")
+                    imgfile = speaker['imgfile'] if str(speaker['imgfile']) !='nan' else 'no_photo.png'
+                    img(src=os.path.join( '..', 'img', imgfile), _class="wow rotateIn")
                     with figcaption():
                         with h5():
                             with a(href=speaker['url']):
                                 name = speaker['speaker']
                                 text( name.split()[0]) ; br()
                                 text( ' '.join( name.split()[1:]) )
+
             except:
                 pass
                                 # for s in speaker['speaker'].split():
