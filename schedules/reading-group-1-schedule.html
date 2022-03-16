@@ -160,6 +160,42 @@ The talk is based on a recently submitted joint work with Christos Papadimitriou
           </li>
         </ul>
       </li>
+      <li>
+        <span class="itemlabel">
+          <span class="hbox llap">Day 5</span>
+        </span>
+        <p>
+          <span class="bf">
+            <span>Tuesday 15 March, 2022</span>
+          </span>
+        </p>
+        <ul style="list-style-type:disc;">
+          <li>Session 1 (Room 116 [in person]):
+            <a href="https://noahgol.github.io/">Noah Golowich</a>
+            <button class="collapsible collapsible-abstract"></button>
+            <div class="content">
+              <p>Much of modern learning theory has been split between two regimes: the classical offline setting, where data arrive independently, and the online setting, where data arrive adversarially. While the former model is often both computationally and statistically tractable, the latter re- quires no distributional assumptions. In an attempt to achieve the best of both worlds, previous work proposed the smooth online setting where each sample is drawn from an adversarially chosen distribution, which is smooth, i.e., it has a bounded density with respect to a fixed dom- inating measure. Existing results for the smooth setting were known only for binary-valued function classes and were computationally expensive in general; in this paper, we fill these lacunae. In particular, we provide tight bounds on the minimax regret of learning a nonpara- metric function class, with nearly optimal dependence on both the horizon and smoothness parameters. Furthermore, we provide the first oracle-efficient, no-regret algorithms in this set- ting. In particular, we propose an oracle-efficient improper algorithm whose regret achieves optimal dependence on the horizon and a proper algorithm requiring only a single oracle call per round whose regret has the optimal horizon dependence in the classification setting and is sublinear in general. Both algorithms have exponentially worse dependence on the smoothness parameter of the adversary than the minimax rate. We then prove a lower bound on the oracle complexity of any proper learning algorithm, which matches the oracle-efficient upper bounds up to a polynomial factor, thus demonstrating the existence of a statistical-computational gap in smooth online learning. Finally, we apply our results to the contextual bandit setting to show that if a function class is learnable in the classical setting, then there is an oracle-efficient, no-regret algorithm for contextual bandits in the case that contexts arrive in a smooth manner.</p>
+            </div>
+            <button class="collapsible collapsible-bio"></button>
+            <div class="content">
+              <p>Noah Golowich is a PhD Student at Massachusetts Institute of Technology, advised by Constantinos Daskalakis. His research interests are in theoretical machine learning, with particular focus on the connections between multi-agent learning, game theory, and online learning. He is a recipient of a Fannie &amp; John Hertz Foundation Fellowship and an NSF Graduate Fellowship.</p>
+            </div>
+          </li>
+        </ul>
+        <ul style="list-style-type:disc;">
+          <li>Session 2 (Room 116 [in person]):
+            <a href="https://bahh723.github.io/">Chen-yu Wei</a>
+            <button class="collapsible collapsible-abstract"></button>
+            <div class="content">
+              <p>Multi-agent reinforcement learning (MARL) problems are challenging due to information asymmetry. To overcome this challenge, existing methods often require high level of coordination or communication between the agents. We consider two-agent multi-armed bandits (MABs) and Markov decision processes (MDPs) with a hierarchical information structure arising in applications, which we exploit to propose simpler and more efficient algorithms that require no coordination or communication. In the structure, in each step the “leader” chooses her action first, and then the “follower” decides his action after observing the leader’s action. The two agents observe the same reward (and the same state transition in the MDP setting) that depends on their joint action. For the bandit setting, we propose a hierarchical bandit algorithm that achieves a near-optimal gap-independent regret of Oe( √ ABT) and a near-optimal gap-dependent regret of O(log(T )), where A and B are the numbers of actions of the leader and the follower, respectively, and T is the number of steps. We further extend to the case of multiple followers and the case with a deep hierarchy, where we both obtain near-optimal regret bounds. For the MDP setting, we obtain Oe( √ H7S2ABT ) regret, where H is the number of steps per episode, S is the number of states, T is the number of episodes. This matches the existing lower bound in terms of A, B, and T .</p>
+            </div>
+            <button class="collapsible collapsible-bio"></button>
+            <div class="content">
+              <p>Chen-Yu Wei is a fifth-year Computer Science PhD student at University of Southern California. He received M.S. in Communication Engineering and B.S. in Electrical Engineering from National Taiwan University. His research focuses on designing provable algorithms for online decision making, reinforcement learning, and learning in games. He is a recipient of the Best Paper Award at COLT 2021, and the Simons-Berkeley Research Fellowship. </p>
+            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
     <script src="collapsible.js"></script>
   </body>
